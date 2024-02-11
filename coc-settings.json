@@ -1,0 +1,29 @@
+{
+		"languageserver": {
+				"fortran": {
+						"command": "fortls",
+						"filetypes": ["fortran"],
+                        "args": ["--lowercase_intrinsics"],
+						"rootPatterns": [".fortls", ".git/"]
+				},
+				"latex": {
+						"command": "texlab",
+						"filetypes": ["tex", "bib", "plaintex", "context"]
+				}
+		},
+		"texlab.build.executable": "latexmk",
+		"texlab.build.args": ["-pdf", "-lualatex", "--interaction=nonstopmode", "-synctex=1", "%f"],
+		"texlab.build.onSave": true,
+		"texlab.forwardSearch.executable": "zathura",
+		"texlab.forwardSearch.args": ["--synctex-forward", "%l:1:%f", "%p"],
+    "texlab.build.forwardSearchAfter": true,
+    "python.formatting.provider": "ruff",
+    "python.linting.enabled": "true",
+    "python.linting.ruffEnabled": "true",
+    "pyright.organizeimports.provider": "ruff",
+    "pyright.disableDiagnostics": "false",
+    "python.analysis.diagnosticSeverityOverrides": {
+        "reportGeneralTypeIssues": "false"
+    },
+    "coc.preferences.formatOnSaveFiletypes": ["python", "c"]
+}
