@@ -1,11 +1,5 @@
 {
 		"languageserver": {
-				"fortran": {
-						"command": "fortls",
-						"filetypes": ["fortran"],
-                        "args": ["--lowercase_intrinsics"],
-						"rootPatterns": [".fortls", ".git/"]
-				},
 				"latex": {
 						"command": "texlab",
 						"filetypes": ["tex", "bib", "plaintex", "context"]
