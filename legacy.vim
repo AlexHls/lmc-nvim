@@ -66,10 +66,6 @@ nnoremap <space>l <cmd>NvimTreeFocus<cr>
 nnoremap <space>n <cmd>NnnPicker<cr>
 nnoremap <space>x <cmd>NnnExplorer<cr>
 
-" vimf90 options
-let fortran_linter=2
-let g:coc_start_at_startup = 0
-
 let g:coc_start_at_startup = 0
 augroup coc
   autocmd!
@@ -135,13 +131,7 @@ function! Formatonsave()
 endfunction
 autocmd BufWritePre *.h,*.cc,*.cpp call Formatonsave()
 
-"augroup black_on_save
-"  autocmd!
-"  autocmd BufWritePre *.py Black
-"augroup end
 autocmd BufWritePre <buffer> lua vim.lsp.buf.format()
 
-" Misc
-"let g:fprettify_options = "-i 2"
-"let fortran_dep_install=3
-"autocmd Filetype fortran setlocal formatprg=fprettify\ --silent
+" Fortran options
+let fortran_dep_install=3

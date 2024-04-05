@@ -3,12 +3,17 @@
 				"latex": {
 						"command": "texlab",
 						"filetypes": ["tex", "bib", "plaintex", "context"]
-				}
+				},
+                                "fortran": {
+                                    "command": "fortls",
+                                    "filetypes": ["fortran"],
+                                    "rootPatterns": [".fortls", ".git/"]
+                                }
 		},
 		"texlab.build.executable": "latexmk",
 		"texlab.build.args": ["-pdf", "-lualatex", "--interaction=nonstopmode", "-synctex=1", "%f"],
 		"texlab.build.onSave": true,
-		"texlab.forwardSearch.executable": "zathura",
+		"texlab.forwardSearch.executable": "okular",
 		"texlab.forwardSearch.args": ["--synctex-forward", "%l:1:%f", "%p"],
     "texlab.build.forwardSearchAfter": true,
     "python.formatting.provider": "ruff",
