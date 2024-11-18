@@ -18,7 +18,7 @@ call plug#begin("~/.vim/plugged")
  "Plug 'vim-airline/vim-airline'
  "Plug 'vim-airline/vim-airline-themes'
  "Plug 'ms-jpq/chadtree', {'branch': 'chad', 'do': 'python3 -m chadtree deps'}
- Plug 'rudrab/vimf90'
+ "Plug 'rudrab/vimf90'
  Plug 'neoclide/coc.nvim', {'branch': 'release'}
  Plug 'kyazdani42/nvim-web-devicons'
  "Plug 'romgrk/barbar.nvim'
@@ -27,7 +27,7 @@ call plug#begin("~/.vim/plugged")
  Plug 'tpope/vim-sensible'
  Plug 'chun-yang/auto-pairs'
  Plug 'rust-lang/rust.vim'
- Plug 'rudrab/vimf90'
+ "Plug 'rudrab/vimf90'
  "Plug 'JuliaEditorSupport/julia-vim'
  "Plug 'AtsushiSakai/julia.vim'
  Plug 'mcchrish/nnn.vim'
@@ -40,7 +40,7 @@ call plug#begin("~/.vim/plugged")
  Plug 'akinsho/bufferline.nvim', { 'tag': 'v4.*' }
  Plug 'nvim-lualine/lualine.nvim'
  Plug 'nvim-lua/plenary.nvim'
- Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.4' }
+ Plug 'nvim-telescope/telescope.nvim',
  Plug 'nvim-tree/nvim-tree.lua'
  Plug 'psf/black', { 'branch': 'stable' }
  Plug 'github/copilot.vim'
