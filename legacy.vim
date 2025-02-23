@@ -44,6 +44,7 @@ call plug#begin("~/.vim/plugged")
  Plug 'nvim-tree/nvim-tree.lua'
  Plug 'psf/black', { 'branch': 'stable' }
  Plug 'github/copilot.vim'
+ Plug 'eigenfoo/stan-vim'
 call plug#end()
 
 "hi Normal guibg=None ctermbg=None

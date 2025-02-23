@@ -17,12 +17,15 @@
 		"texlab.forwardSearch.args": ["--synctex-forward", "%l:1:%f", "%p"],
     "texlab.build.forwardSearchAfter": true,
     "python.formatting.provider": "ruff",
-    "python.linting.enabled": "true",
-    "python.linting.ruffEnabled": "true",
+    "python.linting.enabled": true,
+    "python.linting.ruffEnabled": true,
     "pyright.organizeimports.provider": "ruff",
-    "pyright.disableDiagnostics": "false",
+    "pyright.disableDiagnostics": false,
+    "pyright.inlayHints.functionReturnTypes": false,
+    "pyright.inlayHints.variableTypes": false,
+    "pyright.inlayHints.parameterTypes": false,
     "python.analysis.diagnosticSeverityOverrides": {
-        "reportGeneralTypeIssues": "false"
+        "reportGeneralTypeIssues": false 
     },
     "coc.preferences.formatOnSaveFiletypes": ["python", "c"]
 }
